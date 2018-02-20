@@ -1,0 +1,4 @@
+*.pyc
+setup/venv
+static/deals/theme
+deals/migrations

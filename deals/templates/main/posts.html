@@ -1,0 +1,156 @@
+{% extends 'main/base.html' %}
+
+{% block posts %} active {% endblock %}
+{% block header %} Posts  {% endblock %}
+{% block content %}
+{% load staticfiles %}
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Posts
+        <small>Control panel</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Posts</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content upload_excel_posts">
+      <form id="new-posts-excel" class="form-group" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-xs-7">
+            <input type="text" class="form-control" placeholder="Post Title" name="title" required>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-7">
+            <textarea class="form-control" rows="3" placeholder="Enter Post Description" name="desc"></textarea>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Product Name</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="product_name" required>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Product URL</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="product_url" required>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Product Category</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="product_category" required>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Product Deal Price</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="product_price" required>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Product MRP</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="product_mrp">
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Deal Website</label>
+          </div>
+          <div class="col-xs-2">
+            <select class="form-control" name="deal_site">
+              <option value="">Select Deal Site</option>
+              {% for site in deal_sites %}
+                <option value="{{site}}">{{ site }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+
+
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Offer Start Time</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="offer_start" required>
+          </div>
+          <div class="col-xs-2">
+            <select class="form-control" name="start_format">
+              <option value="">Select Date Format</option>
+              {% for format, example in time_dict.items %}
+                <option value="{{format}}">{{ example }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-xs-2" style="text-align:center;vertical-align: sub;">
+            <label style="font-size: 18px;">Offer End Time</label>
+          </div>
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="offer_end" required>
+          </div>
+          <div class="col-xs-2">
+            <select class="form-control" name="start_format">
+              <option value="">Select Date Format</option>
+              {% for format, example in time_dict.items %}
+                <option value="{{format}}">{{ example }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="row add-excel-col" style="padding-top:15px;">
+          <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Display name" name="display_name" required>
+          </div>
+         <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder="Column Header" name="column_name" required>
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="btn btn-block btn-success add-new-exc"><i class="fa fa-fw fa-plus"></i></button>
+          </div>
+          <div class="col-xs-4 hide">
+            <input type="text" class="form-control" placeholder=".col-xs-5">
+          </div>
+        </div>
+        <div class="form-group" style="padding-top:10px;">
+          <label for="excel-file">Select Excel File</label>
+          <input type="file" id="excel-file" name="excel-file">
+        </div>
+        <div class="form-group" style="padding-top:10px;">
+          <label for="image-file">Select Image File</label>
+          <input type="file" id="excel-file" name="image-file">
+        </div>
+        <div class="row" style="padding-top:10px;">
+          <div class="col-xs-1">
+            <input type="submit" class="btn btn-primary" value="Add New Post">
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- /.content -->
+{% endblock %}
+
+{% block scriptfiles %}
+  <script src="{% static 'deals/custom/posts.js' %}"></script>
+{% endblock %}

@@ -39,7 +39,7 @@ class Product(models.Model):
         unique_together = ('post', 'product_name')
 
 
-class PostData(models.Model):
+class ProductData(models.Model):
     id = models.AutoField(primary_key=True)
     product = models.ForeignKey(Product, null=True, blank=True, default=None, on_delete=Product)
     display_name = models.CharField(max_length=64, db_index=True)

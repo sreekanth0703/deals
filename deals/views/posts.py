@@ -122,6 +122,7 @@ def insert_post(request):
             post_obj = Post.objects.create(post_title=post_title, post_desc=post_desc, status=1)
             post_data_objs = []
             for prd_dat in data[:100]:
+                prd_dat['post_id'] = post_obj.id
                 if len(prd_dat.get('product_url', '')) > 350:
                     continue
                 prd_extra = copy.deepcopy(prd_dat.get('extra_fields', {}))

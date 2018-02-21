@@ -1,11 +1,17 @@
 from rest_framework import serializers
 from deals.models import *
 
+class ProductDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductData
+        fields = ('display_name',)
+
 class ProductSerializer(serializers.ModelSerializer):
+    product_data = ProductDataSerializer(source='productdata_set', many=True)
 
     class Meta:
         model = Product
-        fields = ('product_name')
+        fields = ('product_name', 'product_data')
 
 class PostSerializer(serializers.ModelSerializer):
     post_title = serializers.CharField(max_length=100)

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if IE]>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <![endif]-->
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="Black Friday - Bootstrap Responsive template for deals & coupon codes." />
+        <meta name="author" content="itgeeksin.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Black Friday - Bootstrap Responsive template for deals & coupon codes.</title>
+        <!-- Bootstrap -->
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <!-- Master Css -->
+        <link href="{% static 'custom_deals/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'custom_deals/css/color.css' %}" rel="stylesheet" id="colors">
+        <link href="{% static 'custom_deals/css/responsive.css' %}" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- //***preloader Start***// -->
+        <div class='preloader'>
+            <div class='loader-center'>
+                <div class='loader'>
+                    <div class='circle circle-1'></div>
+                    <div class='circle circle-2'></div>
+                    <div class='circle circle-3'></div>
+                    <div class='circle circle-4'></div>
+                </div>
+            </div>
+        </div>
+        <!-- //***preloader End***// -->
+        <!-- //***Header-section Start***// -->
+        <div class="main-header">
+            <div class="top-bar" id="top-bar-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="contact">
+                                <ul>
+                                    <li>
+                                        <select name="language">
+                                            <option value="a">English</option>
+                                            <option value="a">English</option>
+                                            <option value="a">English</option>
+                                        </select>
+                                    </li>
+                                    <li class="marL20">
+                                        <select name="currency">
+                                            <option value="$USD">$USD</option>
+                                            <option value="$AUD">$AUD</option>
+                                            <option value="INR">INR</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                            <div class="contacts">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> login</a></li>
+                                    <li class="marL30"><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> signup</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-menu" class="wa-main-menu main-menu">
+                <!-- Menu -->
+                <div class="wathemes-menu relative">
+                    <!-- navbar -->
+                    <div class="navbar navbar-default theme-bg mar0" role="navigation">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="navbar-header">
+                                        <!-- Button For Responsive toggle -->
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        </button>
+                                        <!-- Logo -->
+                                        <a class="navbar-brand" href="index-2.html">
+                                        <img class="site_logo" alt="Site Logo" src="{% static 'custom_deals/img/logo.png' %}" />
+                                        </a>
+                                    </div>
+                                    <!-- Navbar Collapse -->
+                                    <div class="navbar-collapse collapse">
+                                        <!-- nav -->
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="index-2.html">home</a></li>
+                                            <li>
+                                                <a href="#">deals <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="deals-grid.html">deals grid</a></li>
+                                                    <li><a href="deals-grid-sidebar.html">deals grid sidebar</a></li>
+                                                    <li><a href="deals-list.html">deals list</a></li>
+                                                    <li><a href="deals-list-sidebar.html">deals list sidebar</a></li>
+                                                    <li><a href="deals-single.html">deals single</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">coupons <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="coupon-grid.html">coupon grid</a></li>
+                                                    <li><a href="coupan-grid-sidebar.html">coupan grid sidebar</a></li>
+                                                    <li><a href="coupon-list.html">coupon list</a></li>
+                                                    <li><a href="coupon-list-sidebar.html">coupon list sidebar</a></li>
+                                                    <li><a href="coupons-details.html">coupon details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">blog <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="blog-grid.html">blog grid</a></li>
+                                                    <li><a href="blog-grid-sidebar.html">blog grid sidebar</a></li>
+                                                    <li><a href="blog-list.html">blog list</a></li>
+                                                    <li><a href="blog-list-sidebar.html">blog list sidebar</a></li>
+                                                    <li><a href="blog-details.html">blog details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="categories.html">categories</a></li>
+                                                    <li><a href="shopcart.html">shopcart</a></li>
+                                                    <li><a href="wishlist.html">wishlist</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="store-search.html">stores</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">contact us</a>
+                                            </li>
+                                        </ul>
+                                        <div class="search-icon s-icon hidden-xs">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-1 head-search hidden-xs">
+                                                        <a href="#" class="search-click"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="flaticon-shopping-cart nav-icon" aria-hidden="true"></i><sup>2</sup></a></li>
+                                            </ul>
+                                            <div class="head-search hidden-lg hidden-md hidden-sm"><a href="#" class="search-click"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                                        </div>
+                                        <!-- navbar-collapse -->
+                                    </div>
+                                </div>
+                                <!-- col-md-12 -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- container -->
+                    </div>
+                    <!-- navbar -->
+                </div>
+                <!--  Menu -->
+                <div id="search-open" class="top-search">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                                <a class="input-group-addon close-search search-close"><i class="fa fa-times"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***Header-section End***// -->
+        <!-- //***slider-section Start***// -->
+        <div class="slider-section padB100 bg">
+            <div id="slider" class="owl-carousel owlCarousel">
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'custom_deals/img/slider/slider-img.jpg' %}" alt="">
+                        <figcaption>
+                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                <h5>Latest Fashion 2K17 Collection With High Rated Products Up To 70% Discount On All Stores</h5>
+                                <div class="stars">
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        <li>
+                                            <h5 class="capital">(500rates)</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Expires in: <span class="red">2 days</span></h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div class="slider-btn">
+                                    <a href="#" class="itg-btn box-btn white">5566778<span>Get Code</span></a>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'custom_deals/img/slider/slider-img2.jpg' %}" alt="">
+                        <figcaption>
+                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                <h5>Latest Fashion 2K17 Collection With High Rated Products Up To 70% Discount On All Stores</h5>
+                                <div class="stars">
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        <li>
+                                            <h5 class="capital">(500rates)</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Expires in: <span class="red">2 days</span></h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div class="slider-btn">
+                                    <a href="#" class="itg-btn box-btn white">5566778<span>Get Code</span></a>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="{% static 'custom_deals/img/slider/slider-img1.jpg' %}" alt="">
+                        <figcaption>
+                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                <h5>Latest Fashion 2K17 Collection With High Rated Products Up To 70% Discount On All Stores</h5>
+                                <div class="stars">
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        <li>
+                                            <h5 class="capital">(500rates)</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Expires in: <span class="red">2 days</span></h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div class="slider-btn">
+                                    <a href="#" class="itg-btn box-btn white">5566778<span>Get Code</span></a>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- //***slider-section End***// -->
+        <!-- //***categories Start***// -->
+        <div class="bg our-categorie">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="categories" class="owl-carousel owlCarousel slidercategorie">
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-armchair-silhouette green1"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">furnimart</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-diamond green2"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">fashion</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-paintbrush orangered"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">home</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-eight-ball yellow"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">entertain</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-air-transport green3"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">travel</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-pc-computer-with-monitor darkred"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">electronics</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-dumbbell-for-training green4"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">fitness</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-perfume purple"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">beauty</a></h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="categorie">
+                                <figure>
+                                    <a href="categories.html"><i class="flaticon-dinner green5"></i></a>
+                                </figure>
+                                <h5><a href="categories.html">food</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***categories End***// -->
+        <div class="clear"></div>
+        <!-- //***Services Start***// -->
+        <div class="service-section bg">
+            <div class="container padTB100">
+                <div class="col-md-4 col-sm-4 col-xs-12 mr-xs">
+                    <div class="box">
+                        <figure>
+                            <img src="{% static 'custom_deals/img/all/polygon.jpg' %}" alt="">
+                            <figcaption>
+                                <div class="boxes">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <div class="box-icon">
+                                            <a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="box-text">
+                                            <h3><a href="#">reacive a gift</a></h3>
+                                            <h5>reacive gift over order $125</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 mr-xs">
+                    <div class="box">
+                        <figure>
+                            <img src="{% static 'custom_deals/img/all/polygon1.jpg' %}" alt="">
+                            <figcaption>
+                                <div class="boxes">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <div class="box-icon">
+                                            <a href="#"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="box-text pull-right">
+                                            <h3>free shipping</h3>
+                                            <h5> more than order $25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                        <figure>
+                            <img src="{% static 'custom_deals/img/all/polygon2.jpg' %}" alt="">
+                            <figcaption>
+                                <div class="boxes">
+                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                        <div class="box-icon">
+                                            <a href="#"><i class="fa fa-headphones" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                        <div class="box-text pull-right">
+                                            <h3>24/7 support</h3>
+                                            <h5>fell free to contact</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***Services End***// -->
+        <!-- //***Latest-deals Start***// -->
+        <div class="latest-deals padB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 box1 marB30">
+                        <div class="section-box">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <h3><a href="#"><i class="flaticon-label"></i></a> latest deals</h3>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="symbol">
+                                    <h5>view all <a href="deals-grid-sidebar.html"><i class="flaticon-external-link-symbol"></i></a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 marB30">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image1.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="jan 30, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 marB30">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image2.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="feb 3, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 marB30">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image3.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="jan 3, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mr-xs">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image4.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="march 8, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 mr-xs">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image5.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="april 1, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="box-a">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/image6.jpg' %}" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">title goes here</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>Find Latest Collections Of All Brands at Shop</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="may 6, 2018 15:37:25">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">000<span>d.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>h.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>m.</span></div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <div class="timer">00<span>s.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***Latest-deals End***// -->
+        <!-- //***Offers-section Start***// -->
+        <div class="slider-second slidernav padTB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 marB30">
+                        <div class="section-box text-left">
+                            <h3><i class="flaticon-stars-couple-of-different-sizes"></i> today's trending offers</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="slidersecond" class="owl-carousel owlCarousel">
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/slider/slider1.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail box-details">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB20"><a href="wishlist.html">Flate 25% OFF on all Clothing</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                            <div class="row">
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li class="grey-a"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                            <div class="row">
+                                                <h5>Expires in: <span class="red">2 days</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                            <div class="row">
+                                                <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/slider/slider2.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail box-details">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB20"><a href="wishlist.html">Flate 25% OFF on all Clothing</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                            <div class="row">
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li class="grey-a"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                            <div class="row">
+                                                <h5>Expires in: <span class="red">2 days</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                            <div class="row">
+                                                <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/slider/slider3.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail box-details">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB20"><a href="wishlist.html">Flate 25% OFF on all Clothing</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                            <div class="row">
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li class="grey-a"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                            <div class="row">
+                                                <h5>Expires in: <span class="red">2 days</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                            <div class="row">
+                                                <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/slider/slider4.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail box-details">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB20"><a href="wishlist.html">Flate 25% OFF on all Clothing</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                            <div class="row">
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li class="grey-a"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                            <div class="row">
+                                                <h5>Expires in: <span class="red">2 days</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                            <div class="row">
+                                                <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/slider/slider5.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail box-details">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB20"><a href="wishlist.html">Flate 25% OFF on all Clothing</a></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5">
+                                            <div class="row">
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li class="grey-a"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-7">
+                                            <div class="row">
+                                                <h5>Expires in: <span class="red">2 days</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                            <div class="row">
+                                                <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***Offers-section End***// -->
+        <!-- //***popular-stores Start***// -->
+        <div class="popular-stores bg padTB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 marB30">
+                        <div class="section-box">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <h3><i class="flaticon-commerce"></i> popular stores</h3>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="symbol">
+                                    <h5>view all <a href="store-search.html"><i class="flaticon-external-link-symbol"></i></a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 marB30">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer1.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 marB30">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer2.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 marB30">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer3.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 marB30">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer4.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 mr-xs">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer5.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 mr-xs">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer6.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer7.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="brand-img">
+                            <figure>
+                                <img src="{% static 'custom_deals/img/all/layer8.jpg' %}" alt="">
+                                <figcaption>
+                                    <h4><a href="store-search.html">up to 15% cash back offer</a></h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***Offers-section End***// -->
+        <!-- //***coupons-section Start***// -->
+        <div class="coupons-section couponnav padTB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 marB30">
+                        <div class="section-box text-right">
+                            <h3>over 400+ coupons available <i class="flaticon-coupon"></i></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="sliderthird" class="owl-carousel owlCarousel">
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-b">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/layer9.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="border">
+                                    <div class="scissor-icon">
+                                        <img src="{% static 'custom_deals/img/all/scissors.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="box-detail details">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <h4 class="hover"><a href="coupons-details.html">4% extra cash back $250 Offer On all new products</a></h4>
+                                            <h4 class="marB20 marT20">Stores <span class="grey-a">- amazon,snapdeal, yepme</span></h4>
+                                            <h4 class="marB20">expires :<span class="red"> 25-11-2017 </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                        <div class="row">
+                                            <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-b">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/layer10.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="border">
+                                    <div class="scissor-icon">
+                                        <img src="{% static 'custom_deals/img/all/scissors.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="box-detail details">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <h4 class="hover"><a href="coupons-details.html">4% extra cash back $250 Offer On all new products</a></h4>
+                                            <h4 class="marB20 marT20">Stores <span class="grey-a">- amazon,snapdeal, yepme</span></h4>
+                                            <h4 class="marB20">expires :<span class="red"> 25-11-2017 </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                        <div class="row">
+                                            <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-b">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/layer11.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="border">
+                                    <div class="scissor-icon">
+                                        <img src="{% static 'custom_deals/img/all/scissors.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="box-detail details">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <h4 class="hover"><a href="coupons-details.html">4% extra cash back $250 Offer On all new products</a></h4>
+                                            <h4 class="marB20 marT20">Stores <span class="grey-a">- amazon,snapdeal, yepme</span></h4>
+                                            <h4 class="marB20">expires :<span class="red"> 25-11-2017 </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                        <div class="row">
+                                            <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-b">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/layer15.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="border">
+                                    <div class="scissor-icon">
+                                        <img src="{% static 'custom_deals/img/all/scissors.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="box-detail details">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row">
+                                            <h4 class="hover"><a href="coupons-details.html">4% extra cash back $250 Offer On all new products</a></h4>
+                                            <h4 class="marB20 marT20">Stores <span class="grey-a">- amazon,snapdeal, yepme</span></h4>
+                                            <h4 class="marB20">expires :<span class="red"> 25-11-2017 </span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 marT20 marB10 text-left">
+                                        <div class="row">
+                                            <a href="#" class="itg-btn box-btn black">5566778<span>Get Code</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***coupons-section End***// -->
+        <!-- //***latest-blog Start***// -->
+        <div class="latest-blog bg blognav padTB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 marB30">
+                        <div class="section-box text-left">
+                            <h3><i class="flaticon-blogger-logotype"></i> latest blog</h3>
+                        </div>
+                    </div>
+                    <div id="sliderfourth" class="owl-carousel owlCarousel">
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/image7.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB10"><a href="blog-details.html">post title here</a></h4>
+                                                <ul class="marB10 fonts">
+                                                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> MAY 24, 2015</a></li>
+                                                    <li class="marL10 upper"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> comments</a></li>
+                                                </ul>
+                                                <p>Lorem Ipsum is simply dummy text of therinting andey type setting industry lorem Ipsum is simply dummy.</p>
+                                                <span><a href="blog-details.html" class="hover">read more</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/image8.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB10"><a href="blog-details.html">post title here</a></h4>
+                                                <ul class="marB10 fonts">
+                                                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> MAY 24, 2015</a></li>
+                                                    <li class="marL10 upper"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> comments</a></li>
+                                                </ul>
+                                                <p>Lorem Ipsum is simply dummy text of therinting andey type setting industry lorem Ipsum is simply dummy.</p>
+                                                <span><a href="blog-details.html" class="hover">read more</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-a">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/image9.jpg' %}" alt="">
+                                    </figure>
+                                    <div class="box-detail">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <h4 class="hover marB10"><a href="blog-details.html">post title here</a></h4>
+                                                <ul class="marB10 fonts">
+                                                    <li><a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> MAY 24, 2015</a></li>
+                                                    <li class="marL10 upper"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> comments</a></li>
+                                                </ul>
+                                                <p>Lorem Ipsum is simply dummy text of therinting andey type setting industry lorem Ipsum is simply dummy.</p>
+                                                <span><a href="blog-details.html" class="hover">read more</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partnernav bg padB100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 marB30">
+                        <div class="partner-btn">
+                            <div class="section-box">
+                                <h3 class="text-left"><i class="flaticon-hand-shake"></i> our partners</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="sliderfifth" class="owl-carousel owlCarousel">
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-c">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/polygon3.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-c">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/polygon4.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-c">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/polygon5.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-c">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/polygon6.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="box-c">
+                                    <figure>
+                                        <img src="{% static 'custom_deals/img/all/polygon7.jpg' %}" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //***latest-blog End***// -->
+        <div class="clear"></div>
+        <!-- //***Footer-Section Start***// -->
+        <div class="main-footer padB50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="newsletter marB70">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <div class="row">
+                                    <h5>sign up for</h5>
+                                    <h3>newsletter</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <div class="row">
+                                    <div class="newsletter-bar">
+                                        <input type="text" placeholder="Enter E-mail address">
+                                    </div>
+                                    <div class="submit">
+                                        <a href="#" class="itg-btn">submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-logo">
+                            <a href="#"><img src="{% static 'custom_deals/img/footer-logo.png' %}" alt=""></a>
+                            <p>Lorem Ipsum is simply dummy text 
+                                of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's the 
+                                standard dummy 
+                            </p>
+                            <img src="{% static 'custom_deals/img/all/payment-icon.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <h4>information</h4>
+                        <p><a href="#">about Us</a></p>
+                        <p><a href="#">service</a></p>
+                        <p><a href="#">recent</a></p>
+                        <p><a href="#">seller</a></p>
+                        <p><a href="#">privacy</a></p>
+                        <p><a href="#">policy</a></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <h4>brands</h4>
+                        <p><a href="#">apple</a></p>
+                        <p><a href="#">asus</a></p>
+                        <p><a href="#">samsung</a></p>
+                        <p><a href="#">nike</a></p>
+                        <p><a href="#">addidas</a></p>
+                        <p><a href="#">oppo</a></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <h4>categorie</h4>
+                        <p><a href="#">fashion</a></p>
+                        <p><a href="#">accesories</a></p>
+                        <p><a href="#">home & garden</a></p>
+                        <p><a href="#">furnimart</a></p>
+                        <p><a href="#">electronics</a></p>
+                        <p><a href="#">foods</a></p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <h4>my account</h4>
+                        <p><a href="#">sign in</a></p>
+                        <p><a href="#">view cart</a></p>
+                        <p><a href="#">my wishlist</a></p>
+                        <p><a href="#">track order</a></p>
+                        <p><a href="#">shipping policy</a></p>
+                        <p><a href="#">help</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <p><a href="#"><i class="fa fa-copyright" aria-hidden="true"></i></a> 2017 Black Friday - Bootstrap Responsive template for deals & coupon codes..Theme by<a href="#"><span class="itg-color"> IT-Geeks.</span></a></p>
+            </div>
+        </div>
+        <!-- //***Footer-Section End***// -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{% static 'custom_deals/js/jquery.min.js' %}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'custom_deals/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'custom_deals/plugins/owl-carousel/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'custom_deals/plugins/megamenu/js/hover-dropdown-menu.js' %}"></script>
+        <script src="{% static 'custom_deals/plugins/megamenu/js/jquery.hover-dropdown-menu-addon.js' %}"></script>
+        <script src="{% static 'custom_deals/plugins/preloader/js/anime.min.js' %}"></script>
+        <script src="{% static 'custom_deals/js/main.js' %}"></script>
+    </body>
+
+<!-- Mirrored from preview.itgeeksin.com/blackfriday/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Feb 2018 14:48:46 GMT -->
+</html>

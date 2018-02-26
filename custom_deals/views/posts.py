@@ -17,3 +17,7 @@ def display_posts(request):
         post = PostSerializer(post_obj)
         json_data.append(post.data)
     return HttpResponse(json.dumps({'data': json_data}))
+
+
+def deals(request):
+    return render(request, 'index.html')

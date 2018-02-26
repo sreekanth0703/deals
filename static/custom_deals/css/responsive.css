@@ -1,0 +1,1050 @@
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .slider-btn .itg-btn.box-btn {
+        padding: 5px 30px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+    .nav>li>a {
+        padding: 0 13px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+    }
+    .navbar-brand>img {
+		padding: 20px 0;
+		max-width: 190px;
+    }
+	.navbar-nav {
+		padding-right: 31px;
+		padding-top: 24px;
+	}
+    .slider-section figcaption {
+        padding: 10px;
+    }
+    .slider-btn .itg-btn.box-btn {
+        padding: 4px 22px;
+    }
+    .categorie a i {
+        padding: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 14px;
+    }
+    .boxes {
+        padding: 0 0px 0 25px;
+        margin-top: -22px;
+    }
+    .box-detail h4 {
+        font-size: 16px;
+    }
+    .box-detail h3,
+    ul.text-size p {
+        font-size: 16px;
+    }
+    .box-detail.details {
+        padding: 15px;
+    }
+    .box-detail.box-details h5,
+    ul.stars li {
+        font-size: 12px;
+        top: 5px;
+    }
+    .box-detail.box-details {
+        padding: 15px;
+    }
+    .newsletter ul li {
+        padding: 7px;
+        margin-top: 9px;
+    }
+    .awesome-spot h4 {
+        font-size: 12px;
+    }
+    .box-detail.description {
+        padding: 9.3px 30px;
+    }
+    .sm-b h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+        margin-top: 0;
+    }
+    .box-detail h4 {
+        font-size: 14px;
+    }
+    .box-detail.boxs {
+        padding: 5.3px 10px;
+    }
+    .coupons .box-detail.details.detail {
+        padding: 24.5px;
+    }
+    .box-detail.box-f {
+        padding: 37px;
+    }
+    .box-c .box-detail {
+        padding: 27px;
+    }
+    .mar-res .box-c .box-detail {
+        padding: 18px;
+    }
+    .cart-detail h4 {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    h3.cart-price,
+    .cart-input {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .searchbar button {
+        padding: 6px 35px;
+    }
+    .cart {
+        padding: 30px 30px 0px 30px;
+    }
+    .cart h4 {
+        margin-bottom: 30px;
+    }
+    a.itg-btn.cart-btn.wishlist {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    .status {
+        margin-top: 30px;
+    }
+    .partnernav .owl-nav,
+    .blognav .owl-nav,
+    .couponnav .owl-nav,
+    .slidernav .owl-nav {
+        max-width: 920px;
+    }
+	.box-b.box-e.boxx {
+		padding: 54px 0;
+	}
+	.box-detail.deals-sidebar .cart-icon i[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+		font-size: 15px;
+	}
+	.box-detail.deals-sidebar .cart-icon {
+		width: 25px;
+		height: 25px;
+		padding: 0px 5px;
+		margin-top: 0px;
+	}
+	.blogs {
+		padding: 15px;
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .nav>li>a {
+        padding: 0 13px;
+    }
+	.box-detail .blog {
+    padding: 17px;
+	}
+    .navbar-brand>img {
+		padding: 20px 0;
+		max-width: 190px;
+    }
+	.box-detail.deals-sidebar .cart-icon i[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+		font-size: 15px;
+	}
+	.box-detail.deals-sidebar .cart-icon {
+		width: 25px;
+		height: 25px;
+		padding: 0px 5px;
+		margin-top: 0px;
+	}
+    .navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+    }
+    .navbar-nav {
+		padding-right: 31px;
+		padding-top: 23px;
+	}
+    .slider-section figcaption {
+        padding: 10px;
+    }
+    .slider-btn .itg-btn.box-btn {
+        padding: 5px 20px;
+    }
+    .categorie a i {
+        padding: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 14px;
+    }
+    .boxes {
+        padding: 0 0px 0 25px;
+        margin-top: -22px;
+    }
+    .box-detail h4 {
+        font-size: 16px;
+    }
+    .box-detail h3,
+    ul.text-size p {
+        font-size: 16px;
+    }
+    .box-detail.details {
+        padding: 15px;
+    }
+    .box-detail.box-details h5,
+    ul.stars li {
+        font-size: 12px;
+        top: 5px;
+    }
+    .box-detail.box-details {
+        padding: 15px;
+    }
+    .newsletter ul li {
+        padding: 7px;
+        margin-top: 9px;
+    }
+    .awesome-spot h4 {
+        font-size: 12px;
+    }
+    .box-detail.description {
+        padding: 9.4px 30px;
+    }
+    .sm-b h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+        margin-top: 0;
+    }
+    .box-detail h4 {
+        font-size: 14px;
+    }
+    .box-detail.boxs {
+        padding: 5.3px 10px;
+	}
+    
+    .coupons .box-detail.details.detail {
+        padding: 24.5px;
+    }
+    .box-detail.box-f {
+        padding: 37px;
+    }
+    .box-c .box-detail {
+        padding: 26.5px;
+    }
+    .mar-res .box-c .box-detail {
+        padding: 18px;
+    }
+    .cart-detail h4 {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    h3.cart-price,
+    .cart-input {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .searchbar button {
+        padding: 6px 35px;
+    }
+    .cart {
+        padding: 30px 30px 0px 30px;
+    }
+    .cart h4 {
+        margin-bottom: 30px;
+    }
+    a.itg-btn.cart-btn.wishlist {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    .status {
+        margin-top: 30px;
+    }
+    .partnernav .owl-nav,
+    .blognav .owl-nav,
+    .couponnav .owl-nav,
+    .slidernav .owl-nav {
+        max-width: 920px;
+    }
+	.box-b.box-e.boxx {
+		padding: 54px 0;
+	}
+	.blogs {
+		padding: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nav>li>a {
+        padding: 0 2px;
+    }
+    .navbar-brand>img {
+        padding: 20px 0;
+        max-width: 120px;
+    }
+    .partnernav .owl-nav,
+    .blognav .owl-nav,
+    .couponnav .owl-nav,
+    .slidernav .owl-nav {
+        max-width: 700px;
+    }
+	.search-icon.s-icon {
+		margin-top:-13px;
+	}
+    .navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+    }
+    .awesome-spot h4 {
+        font-size: 12px;
+    }
+    .ask-btn {
+        margin-bottom: 30px;
+    }
+    .navbar-nav {
+        padding-right: 31px;
+        padding-top: 17px;
+    }
+    .slider-btn {
+        display: none;
+    }
+    .slider-section figcaption {
+        padding: 10px;
+    }
+    .slider-section h5 {
+        font-size: 12px;
+    }
+    .slider-section .owl-prev,
+    .slider-section .owl-next {
+        margin-top: -20px;
+    }
+    .boxes {
+        padding: 0;
+        margin-top: -17.5px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 10px;
+    }
+    .box-icon i {
+        font-size: 30px;
+    }
+    .box-detail {
+        padding: 15px;
+    }
+    .box-detail h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    ul.stars li {
+        font-size: 10px;
+    }
+    .slider-second ul.stars li {
+        font-size: 15px;
+    }
+    ul.stars {
+        margin-top: -5px;
+    }
+    .box-detail p {
+        font-size: 13px;
+    }
+    ul.text-size p,
+    .box-detail h3 {
+        font-size: 14px;
+    }
+    .box-detail.box-details h5 {
+        margin-top: -3px;
+    }
+    .slider-second .box-detail h4 {
+        font-size: 20px;
+    }
+    .brand-img {
+        text-align: center;
+    }
+    .newsletter {
+        padding: 20px 10px;
+    }
+    .newsletter ul li {
+        padding: 4px;
+		margin-top: 0;
+    }
+    .newsletter ul {
+        margin-top: 7px;
+    }
+    .newsletter h5,
+    .newsletter h3 {
+        font-size: 16px;
+    }
+    .newsletter h5 {
+        font-size: 12px;
+    }
+    .newsletter-bar {
+        margin-top: 4px;
+    }
+    .submit {
+        margin-top: -12px;
+    }
+    .main-footer h4 {
+        font-size: 13px;
+    }
+    .sm-b h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+        margin-top: 0;
+    }
+    .box-detail.description {
+        padding: 1.8px 30px;
+    }
+    .cart-icon {
+        width: 25px;
+        height: 25px;
+        padding: 0px 5px;
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .pagination-box span {
+        font-size: 20px;
+        padding: 0 5px;
+    }
+    .box-detail.boxs {
+        padding: 4.5px 10px;
+    }
+    .coupons .box-detail.details.detail {
+        padding: 26.5px;
+    }
+    ul.fonts li {
+        font-size: 11px;
+    }
+    .box-c .box-detail h4 {
+        margin-bottom: 0px;
+    }
+    .box-c ul.fonts {
+        margin-bottom: 0;
+    }
+    .box-c .box-detail {
+        padding: 5.5px;
+    }
+    .mar-res .box-c .box-detail {
+        padding: 6px;
+    }
+    .categorie-box h3 {
+        font-size: 18px;
+    }
+    .cart-detail h4 {
+        margin-top: 20px;
+        font-size: 11px;
+    }
+    h3.cart-price,
+    .cart-input {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .searchbar button {
+        padding: 6px 35px;
+    }
+    .cart {
+        padding: 30px 30px 0px 30px;
+    }
+    .cart h4 {
+        margin-bottom: 30px;
+    }
+    .status {
+        margin-top: 20px;
+    }
+    a.itg-btn.cart-btn.wishlist {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .store h3 {
+        font-size: 20px;
+    }
+	.box-b.box-e {
+		padding: 42px 0px;
+    }
+	.cart-icon i[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+		font-size: 15px;
+	}
+	.blogs h4 {
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+	.blogs span {
+		font-size: 12px;
+	}
+	.blogs {
+		padding: 23px;
+	}
+	.mr-xs {
+		margin-bottom:30px;
+	}
+}
+@media screen and (max-width: 767px) {
+    .itg-btn.cart-btn.wishlist {
+        margin-bottom: 30px;
+    }
+	.box-detail.box-f {
+		border: none;
+	}
+	.navbar-nav .open .dropdown-menu {
+        padding: 0;
+    }
+    .navbar-nav .dropdown-menu {
+        position: relative!important;
+        width: 100%;
+        float: inherit;
+    }
+	.navbar-default:hover .navbar-nav .dropdown-menu>li>a:hover {
+		color:#000;
+	}
+	.navbar-default .navbar-nav > .open > a {
+		background-color: transparent!important;
+	}
+	.loader-center {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 7px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding-left: 0;
+        text-align: left;
+    }
+    .navbar-default .navbar-nav .dropdown-menu>li>a:hover {
+        background-color: transparent;
+    }
+    .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .dropdown-menu>li>a:hover {
+        color: #000;
+        background: none !important;
+    }
+    .awesome-spot {
+        margin-bottom: 30px;
+    }
+    .ask-btn {
+        margin-bottom: 30px;
+    }
+    .pagination-box span {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+    .box-r {
+        padding-right: 15px;
+    }
+    .box-l {
+        padding-left: 15px;
+    }
+    .deals .box-a {
+        margin-bottom: 0;
+    }
+    .navbar-nav .dropdown-menu {
+        background: none;
+    }
+    .tags {
+        margin-bottom: 30px;
+    }
+    .coupons .box-detail.details.box-detail.details {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .scissor {
+        display: none;
+    }
+    .box-b.box-e {
+        border: none;
+    }
+    .coupons .xs-btn {
+        text-align: center;
+    }
+    .box-detail.box-f {
+        text-align: center;
+    }
+    .box-detail.box-f .itg-btn.box-btn {
+        display: table;
+        margin: 0 auto;
+    }
+    .box-c.mar-res {
+        margin-bottom: 0;
+    }
+    .latest-blog .box-a {
+        margin-bottom: 0px;
+    }
+    .box-c img {
+        width: 100%;
+    }
+    .mar-res {
+        margin-bottom: 0;
+    }
+    .mr-xs {
+        margin-bottom: 30px;
+    }
+    .section-box.cart-box .itg-btn.cart-btn {
+        display: table;
+        margin: 0 auto;
+    }
+    .shopcart-box {
+        display: none;
+    }
+    .cart-detail img {
+        width: 100%;
+    }
+    .cart-detail h4 {
+        text-align: center;
+    }
+    .cart-input {
+        text-align: center;
+    }
+    h3.cart-price {
+        text-align: center;
+    }
+    .section-box.cart-box p {
+        font-size: 15px;
+    }
+    a.itg-btn.cart-btn {
+        display: table;
+        margin: 0 auto;
+    }
+    .cart h4 {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .cart {
+        padding: 30px 30px 0px 30px;
+    }
+    .searchbar {
+        text-align: center;
+    }
+    .cart-xs {
+        margin-top: 0;
+    }
+    .store {
+        padding: 10px;
+    }
+    .custom-nav {
+        position: relative;
+        top: 0;
+    }
+    .custom-nav .owl-nav {
+        position: relative;
+        left: 50%;
+        margin-left: -40px;
+        display: inline-block;
+        top: 20px;
+    }
+    .slidernav .owl-prev {
+        float: left;
+        left: 0;
+        position: relative;
+    }
+    .slidernav .owl-next {
+        float: right;
+        right: -10px;
+        position: relative;
+    }
+	.couponnav .owl-prev {
+        float: left;
+        left: 0;
+        position: relative;
+    }
+    .couponnav .owl-next {
+        float: right;
+        left: 10px;
+        position: relative;
+    }
+	.blognav .owl-prev {
+        float: left;
+        left: 0;
+        position: relative;
+    }
+    .blognav .owl-next {
+        float: right;
+        right: -10px;
+        position: relative;
+    }
+	.partnernav .owl-prev {
+        float: left;
+        left: 0;
+        position: relative;
+    }
+    .partnernav .owl-next {
+        float: right;
+        right: -10px;
+        position: relative;
+    }
+	
+	.box-detail.details.detail {
+		border:none;
+	}
+	.navbar-collapse {
+		padding-right: 0px;
+	}
+	.navbar-nav {
+		padding-right: 0px;
+	}
+	ul.nav.navbar-nav.sm i {
+		float:right;
+	}
+	#top-bar-sec {
+		padding: 0 0 6px 0;
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 767px) {
+    .slider-btn {
+        display: none;
+    }
+    .slider-section figcaption {
+        padding: 10px;
+    }
+    .contact,
+    .contacts {
+        float: none;
+        text-align: center;
+    }
+    #top-bar-sec {
+        padding: 5px 0;
+    }
+    .contact:before,
+    .contacts:after {
+        display: none;
+    }
+    #top-bar-sec {
+        padding: 5px 0;
+    }
+    .navbar-toggle {
+        margin-top: 19px;
+    }
+    .navbar-brand>img {
+        padding: 17px 0;
+    }
+    .slider-section .owl-prev {
+        top: 43%;
+        left: 0%;
+    }
+    .slider-section .owl-next {
+        top: 43%;
+        right: 0%;
+    }
+    .our-categorie .owl-prev {
+        top: 54%;
+        left: 0%;
+    }
+    .our-categorie .owl-next {
+        top: 54%;
+        right: 0%;
+    }
+    .box {
+        margin-bottom: 30px;
+    }
+    .boxes {
+        margin-top: -30px;
+        padding: 0 0px 0 24px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 19px;
+    }
+    .section-box h5 {
+        text-align: center;
+    }
+    .box1 {
+        padding-top: 0px;
+    }
+    ul.text-size p,
+    .box-detail h3 {
+        font-size: 18px;
+    }
+    .box-detail {
+        padding: 15px;
+    }
+    .box-a {
+        margin-bottom: 30px;
+    }
+    .section-box {
+        padding: 15px;
+        text-align: center;
+    }
+    .section-box h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .coupons-section.slidernav .owl-nav {
+        left: 50%;
+    }
+    .box-detail.details.box-detail.details {
+        margin-bottom: 30px;
+    }
+    .newsletter {
+        padding: 20px 10px;
+    }
+    .submit .itg-btn {
+        padding: 10px 20px;
+    }
+    .newsletter ul li {
+        padding: 6px;
+    }
+    .newsletter ul {
+        float: left;
+    }
+    .brand-img {
+        text-align: center;
+    }
+    .slider-section h5 {
+        font-size: 10px;
+    }
+    .searchbar button {
+        right: 25%;
+        padding: 6px 40px;
+    }
+    .searchbar input[type=text] {
+        width: 50%;
+    }
+    .coupon-detail h4:after {
+        left: 100%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    .slider-btn {
+        display: none;
+    }
+    .searchbar button {
+        right: 10%;
+        padding: 6px 30px;
+    }
+    .searchbar input[type=text] {
+        width: 80%;
+    }
+    .slider-section h5 {
+        font-size: 10px;
+    }
+    .slider-section figcaption {
+        padding: 10px;
+    }
+    .contact,
+    .contacts {
+        float: none;
+        text-align: center;
+    }
+    #top-bar-sec {
+        padding: 5px 0;
+    }
+    .contact:before,
+    .contacts:after {
+        display: none;
+    }
+    #top-bar-sec {
+        padding: 5px 0;
+    }
+    .navbar-toggle {
+        margin-top: 19px;
+    }
+    .navbar-brand>img {
+        padding: 17px 0;
+    }
+    .slider-section .owl-prev {
+        top: 43%;
+        left: 0%;
+    }
+    .slider-section .owl-next {
+        top: 43%;
+        right: 0%;
+    }
+    .our-categorie .owl-prev {
+        top: 54%;
+        left: 0%;
+    }
+    .our-categorie .owl-next {
+        top: 54%;
+        right: 0%;
+    }
+    .box {
+        margin-bottom: 30px;
+    }
+    .boxes {
+        margin-top: -30px;
+        padding: 0 0px 0 24px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 19px;
+    }
+    .section-box h5 {
+        text-align: center;
+    }
+    .box1 {
+        padding-top: 0px;
+    }
+    ul.text-size p,
+    .box-detail h3 {
+        font-size: 18px;
+    }
+    .box-detail {
+        padding: 15px;
+    }
+    .box-a {
+        margin-bottom: 30px;
+    }
+    .section-box {
+        padding: 15px;
+        text-align: center;
+    }
+    .section-box h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .coupons-section.slidernav .owl-nav {
+        left: 50%;
+    }
+    .box-detail.details.box-detail.details {
+        margin-bottom: 30px;
+    }
+    .newsletter {
+        padding: 20px 10px;
+    }
+    .submit .itg-btn {
+        padding: 10px 20px;
+    }
+    .newsletter ul li {
+        padding: 6px;
+    }
+    .newsletter ul {
+        float: left;
+    }
+    .brand-img {
+        text-align: center;
+    }
+    .coupon-detail h4:after {
+        border-right: none;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .contact:before,
+    .contacts:after {
+        display: none;
+    }
+    .contact,
+    .contacts {
+        float: none;
+        text-align: center;
+    }
+    #top-bar-sec {
+        padding: 5px 0;
+    }
+    .navbar-toggle {
+        margin-top: 19px;
+    }
+    .navbar-brand>img {
+        padding: 17px 0;
+    }
+    .slider-section .owl-prev {
+        top: 43%;
+        left: 0%;
+    }
+    .slider-section .owl-next {
+        top: 43%;
+        right: 0%;
+    }
+    .our-categorie .owl-prev {
+        top: 54%;
+        left: 0%;
+    }
+    .our-categorie .owl-next {
+        top: 54%;
+        right: 0%;
+    }
+    .boxes {
+        margin-top: -21.5px;
+        padding: 0 0px 0 24px;
+    }
+    .box-text h3,
+    .box-text h5 {
+        font-size: 12px;
+    }
+    .section-box h5 {
+        text-align: center;
+    }
+    .box1 {
+        padding-top: 0px;
+    }
+    ul.text-size p,
+    .box-detail h3 {
+        font-size: 18px;
+    }
+    .box-detail {
+        padding: 15px;
+    }
+    .section-box {
+        padding: 15px;
+        text-align: center;
+    }
+    .section-box h3 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .coupons-section.slidernav .owl-nav {
+        left: 50%;
+    }
+    .box-detail.details.box-detail.details {
+        margin-bottom: 30px;
+    }
+    .newsletter {
+        padding: 20px 10px;
+    }
+    .submit .itg-btn {
+        padding: 10px 20px;
+    }
+    .newsletter ul li {
+        padding: 6px;
+    }
+    .newsletter ul {
+        float: left;
+    }
+    .brand-img {
+        text-align: center;
+    }
+    .slider-btn {
+        display: none;
+    }
+    .slider-section h5 {
+        font-size: 10px;
+    }
+    .slider-section figcaption {
+        padding: 6px 0 0 0;
+    }
+    .searchbar button {
+        right: 0;
+        padding: 6px 30px;
+    }
+    .store h3 {
+        font-size: 10px;
+    }
+    .coupon-detail h4:after {
+        border-right: none;
+    }
+    .store select {
+        width: 50px;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    .coupon-detail h4 {
+        font-size: 15px;
+    }
+    .coupon-detail {
+        padding: 60px 0px;
+    }
+	.brand-img h4 {
+		font-size: 14px;
+		margin-top: -19px;
+	}
+	.contacts {
+		margin-top: 0;
+	}
+	.box-detail.description h4 {
+		font-size: 17px;
+	}
+}

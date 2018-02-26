@@ -8,6 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, logout as auth_logout, login as auth_login
 from deals.views.decorators import login_required, user_logined
 from xlrd import open_workbook
+from django.core.files.storage import FileSystemStorage
 from deals.models import *
 import json
 import re
@@ -81,7 +82,7 @@ def validate_posts_excel(request, reader, no_of_rows, no_of_cols, excel, columns
             excel_col_map[cell_data] = col
         if cell_data in prd_mapping.keys():
             prd_excel[prd_mapping[cell_data]] = col
-    if not excel_col_map:
+    if columns_list and not excel_col_map:
         return 'No Mapping Found', data
     for row in range(1, no_of_rows):
         col_dict = {}
@@ -106,7 +107,9 @@ def insert_post(request):
     ''' Insert New Post '''
     data_dict = dict(request.POST.lists())
     columns_list = data_dict['column_name']
+    columns_list = [dat for dat in columns_list if dat]
     excel = request.FILES['excel-file']
+    image_file = request.FILES.get('image-file', '')
     reader, no_of_rows, no_of_cols, file_type, ex_status = read_excel(excel)
     if ex_status:
         return HttpResponse(ex_status)
@@ -119,6 +122,12 @@ def insert_post(request):
         if post_title:
             if Post.objects.filter(post_title=post_title):
                 return HttpResponse("Post Title Already Exists")
+            post_dict = {'post_title': post_title, 'post_desc': post_desc, 'status': 1}
+            if image_file:
+                fs = FileSystemStorage()
+                filename = fs.save("static/post_images/" + post_title, image_file)
+                uploaded_file_url = fs.url(filename)
+                post_dict['post_image'] = uploaded_file_url
             post_obj = Post.objects.create(post_title=post_title, post_desc=post_desc, status=1)
             post_data_objs = []
             for prd_dat in data[:100]:
@@ -133,15 +142,14 @@ def insert_post(request):
                     prd_dat['offer_start'] = datetime.datetime.strptime(prd_dat['offer_start'], date_format)
                     prd_dat['offer_end'] = datetime.datetime.strptime(prd_dat['offer_end'], date_format)
                 else:
-                    prd_dat['offer_start'] = None
-                    prd_dat['offer_end'] = None
+                    prd_dat['offer_start'] = datetime.datetime.now().date()
+                    prd_dat['offer_end'] = datetime.datetime.now().date() + datetime.timedelta(days=10)
 
                 product_obj = Product.objects.create(**prd_dat)
                 for key, val in prd_extra.items():
-                    post_data_objs.append(PostData(product_id=product_obj.id, display_name=key, column_value=val))
+                    post_data_objs.append(ProductData(product_id=product_obj.id, display_name=key, column_value=val))
             print('completed')
             if post_data_objs:
-                PostData.objects.bulk_create(post_data_objs)
+                ProductData.objects.bulk_create(post_data_objs)
 
     return HttpResponse('Success')
-

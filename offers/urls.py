@@ -39,4 +39,5 @@ urlpatterns = [
 
     ##### Custom Deals Urls  ########
     path('display_posts/', custom_deal_urls.display_posts),
+    path('deals/', custom_deal_urls.deals),
 ]

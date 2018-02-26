@@ -10,14 +10,14 @@ $(document).ready(function() {
            processData:false,
            cache: false,
             'success': function(response) {
-              /*response = $.parseJSON(response);
-              if(response.status == 0) {
-                $("#login_check")[0].reset();
-                alert(response.message);
+              if(response == 'Success')
+              {
+                alert("Data Updated Successfully");
+                $("form#new-posts-excel")[0].reset();
               }
-              else {
-                window.location.replace(window.location.origin + '/home/')
-              }*/
+              else{
+                alert(response); 
+              }
             }});
 
   });

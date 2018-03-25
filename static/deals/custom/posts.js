@@ -3,6 +3,8 @@ $(document).ready(function() {
   //Add New Post
   $( "body" ).on("submit", "#new-posts-excel", function( event ) {
     event.preventDefault();
+    $("body").find("[type=submit]").attr('disabled', true);
+    $("body").find(".loading").show();
     $.ajax({url: '/insert_post/',
             method: 'POST',
            data: new FormData(this),
@@ -10,15 +12,23 @@ $(document).ready(function() {
            processData:false,
            cache: false,
             'success': function(response) {
-              if(response == 'Success')
-              {
+              if(response == 'Success') {
                 alert("Data Updated Successfully");
                 $("form#new-posts-excel")[0].reset();
+                $("body").find(".loading").hide();
+                $("body").find("[type=submit]").attr('disabled', false);
               }
-              else{
-                alert(response); 
+              else {
+                alert(response);
+                $("body").find(".loading").hide();
+                $("body").find("[type=submit]").attr('disabled', false);
               }
-            }});
+            },
+            'error': function (jqXHR, status, err){
+              $("body").find(".loading").hide();
+              alert("Network Error");
+            }
+          });
 
   });
 

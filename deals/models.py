@@ -21,7 +21,7 @@ class Post(models.Model):
 
 class Product(models.Model):
     id = models.AutoField(primary_key=True)
-    post = models.ForeignKey(Post, null=True, blank=True, default=None, on_delete=Post)
+    post = models.ForeignKey(Post, null=True, blank=True, default=None, on_delete=models.CASCADE)
     product_name = models.CharField(max_length=350, db_index=True)
     product_url = models.CharField(max_length=350, default='')
     product_image = models.CharField(max_length=256, default='')
@@ -41,7 +41,7 @@ class Product(models.Model):
 
 class ProductData(models.Model):
     id = models.AutoField(primary_key=True)
-    product = models.ForeignKey(Product, null=True, blank=True, default=None, on_delete=Product)
+    product = models.ForeignKey(Product, null=True, blank=True, default=None, on_delete=models.CASCADE)
     display_name = models.CharField(max_length=64, db_index=True)
     column_value = models.CharField(max_length=120, db_index=True)
     creation_date = models.DateTimeField(auto_now_add=True)
@@ -50,5 +50,3 @@ class ProductData(models.Model):
     class Meta:
         db_table = 'PRODUCT_DATA'
         unique_together = ('product', 'display_name')
-
-

@@ -19,8 +19,8 @@ import copy
 @login_required
 def posts(request):
     ''' Posts Template '''
-    time_dict = {'%m/%d/%y %I:%M %p': '1/23/18 12:00 AM'}
-    deal_sites = ['Amazon.in', 'Flipkart', 'Paytm', 'Snapdeal', 'Shopclues', 'Amazon.com', 'Myntra']
+    time_dict = {'%m/%d/%y %I:%M %p': '1/23/18 12:00 AM', '%dth %b': '20th Jan'}
+    deal_sites = ['Amazon.in', 'Flipkart', 'Paytm', 'Snapdeal', 'Shopclues', 'Amazon.com', 'Myntra', 'Ebay']
     return render(request, 'main/posts.html', {'time_dict': time_dict, 'deal_sites': deal_sites})
 
 
@@ -75,13 +75,15 @@ def validate_posts_excel(request, reader, no_of_rows, no_of_cols, excel, columns
     prd_excel = {}
     for prd_field in product_fields:
         if request.POST.get(prd_field, ''):
-            prd_mapping[request.POST[prd_field]] = prd_field
+            prd_mapping[prd_field] = request.POST[prd_field]
     for col in range(0, no_of_cols):
         cell_data = read_cell_data(0, col, reader, file_type)
         if cell_data in columns_list:
             excel_col_map[cell_data] = col
-        if cell_data in prd_mapping.keys():
-            prd_excel[prd_mapping[cell_data]] = col
+        if cell_data in prd_mapping.values():
+            for key, val in prd_mapping.items():
+                if cell_data == val:
+                    prd_excel[key] = col
     if columns_list and not excel_col_map:
         return 'No Mapping Found', data
     for row in range(1, no_of_rows):
@@ -139,8 +141,12 @@ def insert_post(request):
                     del prd_dat['extra_fields']
                 date_format = request.POST.get('start_format', '')
                 if date_format:
+                    prd_dat['offer_start'] = prd_dat['offer_start'].replace('rd', 'th').replace('st', 'th').replace('nd', 'th')
+                    prd_dat['offer_end'] = prd_dat['offer_end'].replace('rd', 'th').replace('st', 'th').replace('nd', 'th')
                     prd_dat['offer_start'] = datetime.datetime.strptime(prd_dat['offer_start'], date_format)
                     prd_dat['offer_end'] = datetime.datetime.strptime(prd_dat['offer_end'], date_format)
+                    if str(prd_dat['offer_start']) == str(prd_dat['offer_end']):
+                        prd_dat['offer_end'] = prd_dat['offer_end'] + datetime.timedelta(days=1)
                 else:
                     prd_dat['offer_start'] = datetime.datetime.now().date()
                     prd_dat['offer_end'] = datetime.datetime.now().date() + datetime.timedelta(days=10)

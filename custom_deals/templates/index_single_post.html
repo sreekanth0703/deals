@@ -1,0 +1,48 @@
+{% for data in json_data %}
+<div class="col-md-4 col-sm-4 col-xs-12 marB30">
+                        <div class="box-a">
+                            <figure>
+                                <img src="/static/custom_deals/img/all/image1.jpg" alt="">
+                            </figure>
+                            <div class="box-detail">
+                                <div class="col-md-8 col-sm-8 col-xs-7">
+                                    <div class="row">
+                                        <h4 class="hover marB20"><a href="deals-single.html">{{ data.post_title}}</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-5 text-right">
+                                    <div class="row">
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li class="grey-a"><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <p>{{ data.post_desc }}</p>
+                                        <h4 class="marT20"><span class="red"><i class="fa fa-usd" aria-hidden="true"></i>190</span>  <del><span class="grey"><i class="fa fa-usd" aria-hidden="true"></i>250</span></del></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="box-detail">
+                                <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="row">
+                                        <div class="demo1" data-expiry="jan 30, 2018 15:37:25">EXPIRED</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <div class="row">
+                                        <div class="cart-icon">
+                                            <a href="#"><i class="flaticon-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% endfor %}

@@ -127,12 +127,14 @@ def insert_post(request):
             post_dict = {'post_title': post_title, 'post_desc': post_desc, 'status': 1}
             if image_file:
                 fs = FileSystemStorage()
-                filename = fs.save("static/post_images/" + post_title, image_file)
+                filename = fs.save("static/post_images/%s.%s" % (str(post_title), image_file.name.split('.')[-1]), image_file)
                 uploaded_file_url = fs.url(filename)
                 post_dict['post_image'] = uploaded_file_url
-            post_obj = Post.objects.create(post_title=post_title, post_desc=post_desc, status=1)
+            post_obj = Post.objects.create(**post_dict)
             post_data_objs = []
             for prd_dat in data[:100]:
+                if not prd_dat.get('product_name', ''):
+                    continue
                 prd_dat['post_id'] = post_obj.id
                 if len(prd_dat.get('product_url', '')) > 350:
                     continue
@@ -151,7 +153,10 @@ def insert_post(request):
                     prd_dat['offer_start'] = datetime.datetime.now().date()
                     prd_dat['offer_end'] = datetime.datetime.now().date() + datetime.timedelta(days=10)
 
-                product_obj = Product.objects.create(**prd_dat)
+                try:
+                    product_obj = Product.objects.create(**prd_dat)
+                except:
+                    print('Failed')
                 for key, val in prd_extra.items():
                     post_data_objs.append(ProductData(product_id=product_obj.id, display_name=key, column_value=val))
             print('completed')

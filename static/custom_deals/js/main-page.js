@@ -11,7 +11,7 @@ $(document).ready(function() {
   $(window).on('load', function() {
     $.ajax({url: '/display_posts/',
             method: 'POST',
-           data: {'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val()},
+           data: {'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val(), 'limit': 6},
             'success': function(response) {
               //resp = $.parseJSON(response);
               //$.fn.render_index_post_html(resp);

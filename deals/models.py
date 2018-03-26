@@ -18,6 +18,9 @@ class Post(models.Model):
     class Meta:
         db_table = 'POST'
 
+    def __unicode__(self):
+        return str(self.post_title)
+
 
 class Product(models.Model):
     id = models.AutoField(primary_key=True)

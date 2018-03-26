@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 from deals import views as deal_urls
 from custom_deals import views as custom_deal_urls
 admin.autodiscover()
@@ -38,6 +39,7 @@ urlpatterns = [
     path('insert_post/', deal_urls.insert_post),
 
     ##### Custom Deals Urls  ########
-    path('display_posts/', custom_deal_urls.display_posts),
-    path('deals/', custom_deal_urls.deals),
+    path('display_posts/', custom_deal_urls.display_posts.as_view()),
+    path('deals/', TemplateView.as_view(template_name="index.html")),
+    path('all_posts/', custom_deal_urls.all_posts.as_view()),
 ]

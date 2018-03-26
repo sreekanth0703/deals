@@ -17,6 +17,7 @@ class PostSerializer(serializers.ModelSerializer):
     post_title = serializers.CharField(max_length=100)
     post_desc = models.TextField()
     creation_date = serializers.DateTimeField()
+
     #product = ProductSerializer(source='product_set', many=True)
 
     class Meta:

@@ -2,7 +2,11 @@
 <div class="col-md-4 col-sm-4 col-xs-12 marB30">
                         <div class="box-a">
                             <figure>
-                                <img src="/static/custom_deals/img/all/image1.jpg" alt="">
+                                {% if data.post_image %}
+                                  <img src="/{{ data.post_image}}" alt="" style="width: 370px;height: 231px;">
+                                {% else %}
+                                  <img src="/static/custom_deals/img/all/image1.jpg" alt="">
+                                {% endif %}
                             </figure>
                             <div class="box-detail">
                                     <div class="row">
